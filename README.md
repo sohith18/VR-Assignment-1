@@ -11,12 +11,31 @@ This Python script processes an image of coins to detect and segment individual 
 
 The goal is to accurately **segment** the coins and **count** the total number present in the image.  
 
+## Cloning the Repository
+
+To get started, first clone this repository:
+
+```bash
+git clone https://github.com/sohith18/VR-Assignment-1.git
+cd VR-Assignment-1
+```
+
 ## Dependencies  
 Ensure you have the following Python libraries installed:  
 
 ```bash
 pip install opencv-python numpy
 ```
+
+Alternatively, you can install dependencies using a **virtual environment** with Conda:
+
+```bash
+conda create --name vrenv python=3.12
+conda activate vrenv
+pip install -r requirements.txt
+```
+
+This ensures all dependencies are installed in an isolated environment.
 
 ## Running the Script  
 
@@ -82,6 +101,15 @@ The script will also print the total number of detected coins.
 
 This Python script performs image stitching to create a panorama from multiple images using OpenCV. The script applies feature detection, keypoint matching, homography estimation, and image blending techniques to seamlessly stitch images together.
 
+## Cloning the Repository
+
+To get started, first clone this repository:
+
+```bash
+git clone https://github.com/sohith18/VR-Assignment-1.git
+cd VR-Assignment-1
+```
+
 ## Dependencies
 
 Ensure you have the following Python libraries installed:
@@ -89,6 +117,17 @@ Ensure you have the following Python libraries installed:
 ```bash
 pip install opencv-python numpy
 ```
+
+
+Alternatively, you can install dependencies using a **virtual environment** with Conda:
+
+```bash
+conda create --name vrenv python=3.12
+conda activate vrenv
+pip install -r requirements.txt
+```
+
+This ensures all dependencies are installed in an isolated environment.
 
 ## Running the Script
 
