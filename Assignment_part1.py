@@ -34,10 +34,13 @@ def main():
     # Applying Morphological Closing to fill the holes
     kernel = np.ones((5,5), np.uint8)
     closed = cv.morphologyEx(threshold, cv.MORPH_CLOSE, kernel, iterations=6)
+    #cv.imshow('Morhological Closing',closed)
 
     # Finding the contours
     contours, hierarchy = cv.findContours(closed,cv.RETR_EXTERNAL,cv.CHAIN_APPROX_SIMPLE)
     filtered_contours = [cnt for cnt in contours if cv.contourArea(cnt)>15000]
+    # cv.drawContours(resized_img,filtered_contours,-1,(0,255,0),thickness=2)
+    # cv.imshow("Filtered Contours",resized_img)
 
     # Creating a mask for the coins
     mask = np.zeros_like(resized_img)
